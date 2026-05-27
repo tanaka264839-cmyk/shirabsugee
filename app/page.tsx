@@ -21,8 +21,8 @@ export default function HomePage() {
       </header>
 
       <main className="flex-1 flex justify-center items-start px-6 pb-16">
-        <div className="flex items-start gap-10 w-full max-w-3xl">
-          <ResearchMockUI />
+        <div className="flex items-start gap-10 w-full max-w-6xl">
+          <div style={{width:'560px', flexShrink:0}}><ResearchMockUI /></div>
 
           <div className="flex-1 bg-app-card rounded-2xl shadow-sm border border-gray-100 p-10">
             <StepForm questions={QUESTIONS} onComplete={handleComplete} />
